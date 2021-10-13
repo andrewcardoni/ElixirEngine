@@ -14,7 +14,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<p style="text-align: center;">
+<p style="text-align: center; margin-left: auto; margin-right: auto;">
   <a href="https://github.com/RichardPreziosi/ElixirEngine">
     <img style="width: 80px; height: 80px;" src=".github/elixir-engine-logo.png" alt="Logo">
   </a>
@@ -22,7 +22,7 @@
   <h3 align="center">Elixir Engine</h3>
 
   <p style="text-align: center;">
-    Elixir Engine is a 2D game engine, utilizing <a href="https://github.com/dotnet/Silk.NET" target="_blank">Silk.NET</a> <a href="https://www.opengl.org" target="_blank">OpenGL</a> and <a href="https://docs.microsoft.com/en-us/dotnet/" target="_blank">.NET 5</a>, that focuses on proper separation of concerns and dependency injection.
+    Elixir Engine is a 2D game engine, utilizing <a href="https://github.com/dotnet/Silk.NET" target="_blank">Silk.NET</a>, <a href="https://www.opengl.org" target="_blank">OpenGL</a> and <a href="https://docs.microsoft.com/en-us/dotnet/" target="_blank">.NET 5</a>, that focuses on proper separation of concerns and dependency injection.
     <br />
     <a href="https://RichardPreziosi.github.io/ElixirEngine/"><strong>Explore the docs »</strong></a>
     <br />
