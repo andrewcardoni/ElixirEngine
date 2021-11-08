@@ -24,10 +24,10 @@ namespace ElixirEngine
         /// <summary>
         ///     The service provider.
         /// </summary>
-        private IServiceProvider _serviceProvider;
+        private IServiceProvider? _serviceProvider;
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="ApplicationBuilder" /> class.
+        ///     Initializes a new instance of the application builder class.
         /// </summary>
         public ApplicationBuilder()
         {

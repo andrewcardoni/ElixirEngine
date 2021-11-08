@@ -17,13 +17,14 @@ namespace ElixirEngine
         /// <typeparam name="TService">The type of service object to get.</typeparam>
         /// <returns>A service object of the specified type, or null if there is no such registered service.</returns>
         public static TService Resolve<TService>(this IServiceProvider serviceProvider)
+        where TService: notnull
         {
             var serviceType = typeof(TService);
 
             if (typeof(IEnumerable).GetTypeInfo().IsAssignableFrom(serviceType))
                 return (TService) serviceProvider.GetServices(serviceType.GetGenericArguments()[0]);
 
-            return serviceProvider.GetService<TService>();
+            return serviceProvider.GetRequiredService<TService>();
         }
 
         /// <summary>
@@ -36,7 +37,7 @@ namespace ElixirEngine
         {
             return typeof(IEnumerable).GetTypeInfo().IsAssignableFrom(serviceType)
                 ? serviceProvider.GetServices(serviceType.GetGenericArguments()[0])
-                : serviceProvider.GetService(serviceType);
+                : serviceProvider.GetRequiredService(serviceType);
         }
     }
 }

@@ -13,7 +13,7 @@ namespace ElixirEngine
         private readonly ISilkWindow _silkWindow;
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="Window" /> class.
+        ///     Initializes a new instance of the window class.
         /// </summary>
         /// <param name="silkWindow">The silk window.</param>
         public Window(ISilkWindow silkWindow)
@@ -44,7 +44,7 @@ namespace ElixirEngine
         }
 
         /// <summary>
-        ///     Handles the <see cref="ISilkWindow.Closing" /> event.
+        ///     Handles the silk window's closing event.
         /// </summary>
         private void OnSilkWindowClosing()
         {

@@ -14,7 +14,7 @@ namespace ElixirEngine
         private readonly ISilkWindow _silkWindow;
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="Application" /> class.
+        ///     Initializes a new instance of the application class.
         /// </summary>
         /// <param name="silkWindow">The silk window.</param>
         public Application(ISilkWindow silkWindow)
